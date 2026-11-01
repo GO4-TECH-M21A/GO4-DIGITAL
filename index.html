@@ -3,21 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GO4 Learn | Maths d'élite</title>
+<title>GO4 Learn | Maths 2027</title>
 <style>
 body{margin:0;background:#0a0a0a;color:#fff;font-family:sans-serif;text-align:center}
 .header{padding:35px 20px;background:#000;border-bottom:2px solid #D4AF37}
-.header h1{color:#D4AF37;margin:0;letter-spacing:3px;font-size:28px}
+.header h1{color:#D4AF37;margin:0;letter-spacing:3px;font-size:30px}
 .header p{color:#aaa;margin:8px 0}
-.badge{background:#D4AF37;color:#000;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:900;display:inline-block;margin-top:10px}
+.badge{background:#D4AF37;color:#000;padding:7px 16px;border-radius:20px;font-size:12px;font-weight:900;display:inline-block;margin-top:10px}
 .container{max-width:500px;margin:0 auto;padding:20px}
-.cours{background:#151515;border:1px solid #222;border-radius:12px;padding:22px;margin:20px 0;text-align:left}
-.cours h3{margin:0 0 6px 0;color:#fff;font-size:18px}
-.cours span{color:#888;font-size:13px;line-height:1.4;display:block}
-.btn{display:block;width:100%;background:transparent;border:1px solid #D4AF37;color:#D4AF37;padding:13px;border-radius:8px;font-weight:700;margin-top:16px;cursor:pointer;font-size:14px}
-.prix-cache{display:none;background:#D4AF37;color:#000;padding:18px;border-radius:8px;margin-top:15px;text-align:center}
-.prix-cache b{font-size:16px}
-.prix-cache a{display:block;background:#000;color:#D4AF37;padding:12px;border-radius:25px;text-decoration:none;font-weight:900;margin-top:12px}
+.cours{background:#151515;border:1px solid #222;border-radius:14px;padding:22px;margin:20px 0;text-align:left}
+.cours h3{margin:0 0 6px 0;color:#fff;font-size:19px}
+.cours span{color:#888;font-size:13px;line-height:1.5;display:block}
+.btn{display:block;width:100%;background:transparent;border:1.5px solid #D4AF37;color:#D4AF37;padding:14px;border-radius:10px;font-weight:800;margin-top:16px;cursor:pointer;font-size:14px}
+.box{display:none;background:#111;border:1.5px solid #D4AF37;padding:18px;border-radius:10px;margin-top:15px;text-align:center}
+.box b{color:#D4AF37;font-size:22px}
+.box p{margin:8px 0;font-size:14px;color:#ddd}
+.pay{background:#D4AF37;color:#000;padding:4px 10px;border-radius:6px;font-weight:900;display:inline-block}
+.what{background:#25D366;color:#fff;padding:12px;border-radius:25px;text-decoration:none;font-weight:900;display:block;margin-top:12px}
 </style>
 </head>
 <body>
@@ -25,23 +27,39 @@ body{margin:0;background:#0a0a0a;color:#fff;font-family:sans-serif;text-align:ce
 <div class="header">
 <h1>GO4 LEARN</h1>
 <p>Encadrement Mathématiques en ligne</p>
-<div class="badge">BEPC & BAC 2026 - PLACES LIMITÉES</div>
+<div class="badge">BEPC & BAC 2027 - PRÉPARATION D'ÉLITE</div>
 </div>
 
 <div class="container">
 
 <div class="cours">
 <h3>🎓 Mathématiques - Tle D</h3>
-<span>Programme complet BAC D : Fonctions, Suites, Intégrales, Probabilités, Complexes. Exercices types BAC + Corrections détaillées. Groupe VIP WhatsApp.</span>
-<button class="btn" onclick="show('tle-math')">Je suis intéressé →</button>
-<div id="tle-math" class="prix-cache">
-<b>Groupe VIP Tle D Maths</b><br>Programme & conditions sur WhatsApp<br>
-<a href="https://wa.me/22675697023?text=Bonjour%20GO4%20Learn%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20Maths%20Tle%20D%20BAC%202026">Voir sur WhatsApp</a>
+<span>BAC 2027 : Fonctions, Suites, Intégrales, Proba, Complexes. 4 Lives / mois + Exercices types BAC + Groupe VIP.</span>
+<button class="btn" onclick="document.getElementById('tle').style.display='block'">Je suis intéressé →</button>
+<div id="tle" class="box">
+<b>3000F / Mois</b>
+<p>Paiement par <span class="pay">Orange Money</span></p>
+<p style="font-size:16px;font-weight:700">75 69 70 23<br>OUOBA Guillaume</p>
+<p style="color:#aaa;font-size:12px">Après paiement, clique ci-dessous avec la capture</p>
+<a class="what" href="https://wa.me/22675697023?text=Bonjour%20GO4%2C%20j'ai%20pay%C3%A9%203000F%20pour%20Tle%20D%20Maths%202027.%20Voici%20la%20capture%20:">J'ai payé - Tle D</a>
 </div>
 </div>
 
 <div class="cours">
 <h3>📘 Mathématiques - 3e</h3>
-<span>Préparation BEPC 2026 : Calculs, Equations, Géométrie, Fonctions. Méthode simple pour réussir. Groupe VIP WhatsApp.</span>
-<button class="btn" onclick="show('trois-math')">Je suis intéressé →</button>
-<div id="trois-math
+<span>BEPC 2027 : Calculs, Equations, Géométrie, Fonctions. Méthode simple pour valider ton BEPC.</span>
+<button class="btn" onclick="document.getElementById('trois').style.display='block'">Je suis intéressé →</button>
+<div id="trois" class="box">
+<b>2000F / Mois</b>
+<p>Paiement par <span class="pay">Orange Money</span></p>
+<p style="font-size:16px;font-weight:700">75 69 70 23<br>OUOBA Guillaume</p>
+<p style="color:#aaa;font-size:12px">Après paiement, clique ci-dessous avec la capture</p>
+<a class="what" href="https://wa.me/22675697023?text=Bonjour%20GO4%2C%20j'ai%20pay%C3%A9%202000F%20pour%203e%20Maths%202027.%20Voici%20la%20capture%20:">J'ai payé - 3e</a>
+</div>
+</div>
+
+<p style="color:#555;font-size:11px;margin-top:30px">GO4-TECH-M21A | Bobo-Dioulasso | 75 69 70 23</p>
+</div>
+
+</body>
+</html>
