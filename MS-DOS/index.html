@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GO4 Learn - MS-DOS Guillaume</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-4 font-sans">
+<div class="max-w-xl mx-auto">
+
+<div class="bg-black text-white rounded-xl p-4 text-center sticky top-2 shadow">
+<h1 class="font-bold text-xl">GO4 LEARN - REVISION</h1>
+<p class="text-sm">MS-DOS - Pour Guillaume</p>
+<p class="text-sm">Temps restant : <span id="timer" class="font-bold text-yellow-300 text-lg">10:00</span></p>
+</div>
+
+<div class="bg-white rounded-xl p-4 mt-4">
+<p class="font-bold">Ton Nom :</p>
+<input id="nom" type="text" value="Guillaume OUOBA" class="w-full border p-3 rounded-lg mt-2">
+</div>
+
+<!-- Q1 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">1) Qu'est-ce qu'un système d'exploitation ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q1" value="a"> a) Un jeu vidéo</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q1" value="b"> b) Un logiciel de base qui fait fonctionner l'ordinateur et gère ses ressources</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q1" value="c"> c) Un clavier</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q1" value="d"> d) Une imprimante</label>
+</div>
+
+<!-- Q2 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">2) Parmi ces exemples, lesquels sont des systèmes d'exploitation ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q2" value="a"> a) Word et Excel</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q2" value="b"> b) Windows et Linux</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q2" value="c"> c) VLC et WhatsApp</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q2" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q3 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">3) Quelle est une fonction principale d'un système d'exploitation ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q3" value="a"> a) Gérer la mémoire et le processeur</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q3" value="b"> b) Faire du café</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q3" value="c"> c) Imprimer sans imprimante</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q3" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q4 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">4) Quelle est la différence entre programme et logiciel ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q4" value="a"> a) C'est la même chose</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q4" value="b"> b) Le programme = suite d'instructions, Le logiciel = ensemble de programmes + documentation</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q4" value="c"> c) Le programme est plus grand que le logiciel</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q4" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q5 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">5) Quelle est la différence entre logiciel système et logiciel d'application ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q5" value="a"> a) Système = fait fonctionner l'ordinateur, Application = fait un travail précis pour l'utilisateur</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q5" value="b"> b) Système = Word, Application = Windows</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q5" value="c"> c) Il n'y a pas de différence</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q5" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q6 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">6) Que veut dire MS-DOS ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q6" value="a"> a) Microsoft Disk Operating System</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q6" value="b"> b) Mon Super Disque Ordinateur Simple</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q6" value="c"> c) Machine Système D'Organisation</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q6" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q7 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">7) Comment fonctionne MS-DOS ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q7" value="a"> a) Avec la souris et des icônes</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q7" value="b"> b) En mode texte, avec des commandes tapées au clavier comme DIR, COPY</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q7" value="c"> c) Avec la voix</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q7" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q8 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">8) Pourquoi MS-DOS est mono-utilisateur et mono-tâche ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q8" value="a"> a) Parce qu'il est vieux</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q8" value="b"> b) Mono-utilisateur = 1 seul utilisateur à la fois, Mono-tâche = 1 seule tâche à la fois</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q8" value="c"> c) Parce qu'il ne marche pas</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q8" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q9 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">9) Qu'est-ce qu'un système de fichier ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q9" value="a"> a) Un classeur en papier</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q9" value="b"> b) La façon d'organiser, stocker et retrouver les fichiers sur le disque</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q9" value="c"> c) Un virus</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q9" value="d"> d) Aucune réponse</label>
+</div>
+
+<!-- Q10 -->
+<div class="bg-white rounded-xl p-4 mt-4 shadow">
+<p class="font-bold">10) Lesquels sont des systèmes de fichier ?</p>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q10" value="a"> a) FAT32 et NTFS</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q10" value="b"> b) Word et Excel</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q10" value="c"> c) Windows et Linux</label>
+<label class="block border p-3 mt-2 rounded-lg"><input type="radio" name="q10" value="d"> d) Aucune réponse</label>
+</div>
+
+<button onclick="corriger()" class="w-full bg-green-500 text-white font-bold p-4 rounded-xl mt-4 text-lg">VOIR MA NOTE</button>
+<div id="resultat" class="bg-white rounded-xl p-4 mt-4 text-center font-bold text-lg hidden"></div>
+
+</div>
+
+<script>
+let temps = 10 * 60;
+let timerEl = document.getElementById('timer');
+let interval = setInterval(()=>{
+  temps--;
+  let m = Math.floor(temps/60);
+  let s = temps%60;
+  timerEl.textContent = m+":"+(s<10?"0"+s:s);
+  if(temps<=0){ clearInterval(interval); corriger(); }
+},1000);
+
+let bonnes = {q1:"b", q2:"b", q3:"a", q4:"b", q5:"a", q6:"a", q7:"b", q8:"b", q9:"b", q10:"a"};
+
+function corriger(){
+  clearInterval(interval);
+  let score = 0;
+  for(let i=1;i<=10;i++){
+    let coche = document.querySelector('input[name="q'+i+'"]:checked');
+    if(coche && coche.value === bonnes["q"+i]) score++;
+  }
+  let res = document.getElementById('resultat');
+  res.classList.remove('hidden');
+  res.innerHTML = "Guillaume, ta note : " + score + " / 10<br>" + (score>=8 ? "C'est Propre ! Tu as compris MS-DOS 🔥" : score>=5 ? "Pas mal, relis les questions 4, 5 et 8" : "On recommence, relis le cours en haut");
+  window.scrollTo(0, document.body.scrollHeight);
+}
+</script>
+</body>
+  </html>
